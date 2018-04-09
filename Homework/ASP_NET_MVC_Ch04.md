@@ -14,7 +14,6 @@ Routconfig.cs  locateed in App_Start
 ### 4. What is Razor? How does Razor treat an expression beginning with the at symbol (@)?
 Razor is a programming syntax used to create web pages with .NET programming languages.
 Razor starts code blocks with @ (signaling the transition from HTML to C#
-Razor is an engine which converts C# to html
 
 ### 5. How do View methods work?
 They create a view object that renders a view to the response (browser)

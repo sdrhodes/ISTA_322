@@ -17,7 +17,7 @@ ASP.NET is a web development model that is used for building web apps. It is a p
 Servers don't store any "state" of the client. The state is determined client side and sent to the server. REST also allows for clients to request data without knowing the inner workings of the server (for example, file structure) of what it is requesting.
 
 ### 6. What is Agile Development? This will take some independent research.
-Agile development emphasized smaller requirements, and developing code in smaller chunks. Continuous contact with the customer means adapting on the fly. Agile development anticipates and is responsive to change.
+Agile development emphasized smaller requirements, and developing code in smaller chunks. Continuous contact with the customer means adapting on the fly. Agile development anticipates and is responsive to change. Embrace change
 
 ### 7. What is unit testing?
 Unit testing is where small components or modules of code are tested for proper functionality
@@ -26,7 +26,7 @@ Unit testing is where small components or modules of code are tested for proper 
 2007
 
 ### 9. Describe URL routing. As part of your answer, discuss the concept of “clean URLs.”
-URL routing refers to being able to control the URL schema and its relationship to your application
+URL routing refers to being able to control the URL schema and its relationship to your application. Using a URL to invoke a program
 
 ### 10. What is the relationship between Microsoft’s .NET platform and ASP.NET MVC?
 ASPs.NET MVC is built on the .NET framework, which means it has access to all the features of the .NET framework.
