@@ -1,38 +1,38 @@
 ## Steven Rhodes
-### ASP.NET MVC Ch 02
+### ASP.NET MVC Ch 04
 
-### 1. Describe what a controller does in the MVC design pattern.
-The controller is responsible for responding to user input and perform interactions on data model objects. The controller receives input and passes it to the model
+### 1. Using automatic properties is a shortcut that avoids several explicit steps. List the steps that the use of automatic properties avoids.
+You don't need to explicitly define the properties
 
-### 2. What is the ASP.NET MVC convention in naming controllers? What does HomeController.cs do?
-Each controller should be plural or singular depending on whether they interact with single or multiple entities. This is displayed in the URL.
-HomeController.cs controls the functionality of the home page
+### 2. Using the object initializer syntax is a shortcut that avoids several explicit steps. List the steps that the use of object initializers avoids.
 
-### 3. What is the name of the routing configuration file? Where is it located?
-Routconfig.cs  locateed in App_Start
 
-### 4. What is Razor? How does Razor treat an expression beginning with the at symbol (@)?
-Razor is a programming syntax used to create web pages with .NET programming languages.
-Razor starts code blocks with @ (signaling the transition from HTML to C#
+### 3. What is the purpose of creating extension methods?
+To extend the functionality of methods without rewriting them
 
-### 5. How do View methods work?
-They create a view object that renders a view to the response (browser)
+### 4. What is the one feature of extension methods that will always allow you to identify a method as an extension method?
+The this keyword marks it as extension
 
-### 6. What is the purpose of MVC models?
-Models are the guts of an application. They are the methods, classes, and objects that receive input from the controller and view
+### 5. How do you create an extension method that filters the results returned by the method on a user specified criterion?
+The yield keyword
 
-### 7. What is a strongly typed view and why do we use strongly typed views?
-Strongly typed views are views intended to render a specific domain type. Strongly typing a view causes MVC to create shortcuts to make it easier
+### 6. Explain the syntax of a lambda expression. The term “lambda expression” originates in the lambda calculus developed by the mathematician Alonzo Church in the 1930’s. There is a class of programming languages that are based on the fundamental ideas of lambda calculus.
+The lambda operator is used in lambda expressions to separate the input variables on the left side from the lambda body on the right side. Lambda expressions are inline expressions similar to anonymous methods but more flexible; they are used extensively in LINQ queries that are expressed in method syntax.
 
-### 8. What is the purpose of setting a start page URL?
-A start URL sets the default page of your website
+### 7. This will require some outside research. What is the distinction between an anonymously typed variable and a dynamically typed variable?
+anonymously typed variables have no name, C# allows you to create an object with the new keyword without defining its class, while dynamically typed variables tell the compiler that a variable's type can change or that it is not known until runtime. Think of it as being able to interact with an Object without having to cast it.
 
-### 9. Describe the differences between HTTP GET and HTTP POST.
-Get requests are what a browser issues when someone clicks a link. HTTP POST methods are responsible for receiving submitted data and deciding what to do with it.
+### 8. You are having a discussion about C# with a friend of yours that uses another language. You are telling him about C#’s LINQ library. How would you describe to him the difference between LINQ’s SQL-like notation and LINQ’s dot notation?
+LINQ is a SQL-like syntax for querying data in classes. You use the lambda syntax
 
-### 10. Describe the two approaches to validation in web applications.
-Validation ensures information users enter are relevant to the information the model can work with. Validation is typically applied in the domain model. Validation is also supported with declarative validation rules.
+### 9. What, exactly, does the await keyword do?
+The await operator is applied to a task in an asynchronous method to suspend the execution of the method until the awaited task completes. The task represents ongoing work. The asynchronous method in which await is used must be modified by the async keyword.
 
-### 11. What is the role of Cascading Style Sheets (CSS) in web development?
-CSS add style such as font, colors, and spacing to web documents
+### 10. What is the connection between await and the async keywords?
+If you specify that a method is an async method by using an Async or async modifier, you enable the following two capabilities.
 
+The marked async method can use Await or await to designate suspension points. The await operator tells the compiler that the async method can't continue past that point until the awaited asynchronous process is complete. In the meantime, control returns to the caller of the async method.
+
+The suspension of an async method at an await expression doesn't constitute an exit from the method, and finally blocks don’t run.
+
+The marked async method can itself be awaited by methods that call it.
